@@ -7,6 +7,7 @@ class BasePageLocators():
 
 class MainPageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    BASKET_BUTTON = (By.CSS_SELECTOR, "div.basket-mini span.btn-group a.btn")
 
 class LoginPageLocators():
     LOGIN_FORM = (By.CSS_SELECTOR, "#login_form")
