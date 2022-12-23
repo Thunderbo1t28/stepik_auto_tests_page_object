@@ -1,6 +1,7 @@
 from .base_page import BasePage
 from .locators import ProductPageLocators
 
+
 class ProductPage(BasePage):
     def should_be_product_name(self):
         form_login = self.browser.find_element(*ProductPageLocators.PRODUCT_NAME).text
