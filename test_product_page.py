@@ -29,7 +29,11 @@ class TestUserAddToBasketFromProductPage():
         page.add_product_to_basket()
         page.should_be_product_name()
         page.should_be_product_price()
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 6cbe489a26e625956c9671d1194ccb67f6df3aac
 @pytest.mark.add_to_basket
 class TestAddToBasketProduct():
     @pytest.mark.skip
@@ -37,7 +41,11 @@ class TestAddToBasketProduct():
                                       pytest.param(7, marks=pytest.mark.xfail),
                                       8, 9])
     def test_guest_can_add_product_to_basket(self, browser, link):
+<<<<<<< HEAD
         link = f"http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer{link}"
+=======
+        link = f"http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer{link}"        
+>>>>>>> 6cbe489a26e625956c9671d1194ccb67f6df3aac
         page = ProductPage(browser, link)
         page.open()
         page.add_product_to_basket()
